@@ -1,4 +1,4 @@
-
+#0311.10과 비교하기
 def cal(A,B):
     result1=A+B
     result2=A-B
