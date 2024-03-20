@@ -11,6 +11,7 @@ num_list[-2] = "Q"
 num_list[-1] = "K"
 # 카드 1세트 :52장 를 구현해서 출력하시오.
 card_list = [[0]*2 for i in range(52)]
+
 cnt = 0
 for i in shape_list: # "spade","diamond","heart","clover"
     for j in range(13):
