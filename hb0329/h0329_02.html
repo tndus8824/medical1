@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        /*바깥쪽여백은 margin 안쪽 여백은 padding */
+        div{width:500px; height:600px;
+        border:20px dotted black;
+        margin:50px auto;
+        padding-top: 50px;
+        padding-left: 100px;
+        box-sizing: border-box;
+        background-color: yellow;
+        background-clip: border-box; 
+        /*3가지 정리하기 */
+
+        /*도트의 안쪽선의 기준으로 맞추게 된다.원하는 이미지가 가려질수가 있음*/
+
+        /*5+500+100+5=610 옆길이
+        /*박스사이징을 하면 5+(width)+100+5=500이면 500안에 무조건 전체틀이 맞춰진다.*/
+        /*box-sizing: border-box; 박스사이징은 사이즈가 변함이 없다.*/
+        /*패딩은 더 사이즈를 추가적으로 발생시켜 크기에 영향을 미치게된다.*/
+
+       /* margin 설명
+       margin-top:50px;
+        margin-right:80px;
+        margin-bottom:70px;
+        /*margin-left:100px;
+        margin:50px;
+        margin:50px 80px 70px 100px;
+        /*(위,오른, 밑, 왼)시계방향순서로
+        /*50,10,30,10 이면 50,10,30으로 씀
+        /*50,10,50,10 이면 50,10으로 씀*/
+
+    }
+    </style>
+</head>
+<body>
+    <div>
+        제주의 한 과수원에서 새 200여마리가 감귤을 쪼아먹고 집단으로 폐사했다.
+        제주도 자치경찰단은 야생생물 보호 및 관리에 관한 법률 위반 혐의로 A씨를 입건해 조사하고 있다고 28일 밝혔다.
+        A씨는 서귀포시의 과수원 내 감귤에 주사기로 농약을 주입해 이를 쪼아 먹은 새 200여 마리를 폐사하게 만든 혐의를 받는다.
+        자치경찰은 지난 27일 오후 1시쯤 직박구리와 동박새 등 200여마리가 폐사했다는 신고를 받았다.
+    </div>
+    
+</body>
+</html>

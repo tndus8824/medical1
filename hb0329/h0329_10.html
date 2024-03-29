@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{margin:0; padding:0;}
+        #header{width:1200px; height:510px; border:2px solid black;
+        box-sizing:border-box; margin:100px auto 500px; 
+        /*정렬*/
+        display: flex;
+        /*가로정렬:왼쪽 정렬 flex-start, flex-end, center, space-between(끝을 붙혀정렬),space-around(양쪽틈을 주고 정렬)*/
+        justify-content: space-between;
+        /*새로정렬: stretch, flex-start, flex-end, center, baseline(제일작은 모양에 기준에 맞춰라*/
+        align-items:center;
+    }
+
+        /*정렬*/
+        .c{width:300px; height:300px; border:2px solid black;
+        background: aqua;margin-right: 30px;}
+        
+        #main{width:1200px; height:310px; border:2px solid black;
+        box-sizing:border-box; margin:0 auto;}
+        .sub{width:300px; height:300px; border:2px solid black;
+        background: green; float:left;}
+        .sub2{width:100px; height:300px; border:1px solid black;
+        clear:both; background: yellow;}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class ="c">1</div>
+        <div class ="c">2</div>
+        <div class ="c">3</div>   
+        <div class ="sub2">aaaa</div>   
+    </div>
+    <p>htm5</p>
+    <p>htm6</p>
+    <p>htm7</p>
+
+</body>
+</html>
