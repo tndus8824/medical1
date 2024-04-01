@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute</title>
+    <style>
+    *{margin:0; padding: 0;}
+    .main{width:1000px; height:1000px; border: 5px solid black;
+         position:absolute}
+    .con1{width :100px; height:100px; border:2px solid red;
+        position:absolute; left:100px; top:100px; }
+    .con2{width :100px; height:100px; border:2px solid blue;
+        position:absolute; left:0px; top:900px; }
+    .con3{width :100px; height:100px; border:2px solid green;
+        position:absolute; left:500px; top:500px; }
+    .con4{width :100px; height:100px; border:2px solid black;;
+        position:absolute; left:700px; top:300px; }
+    .con5{width :100px; height:100px; border:2px solid aqua;
+        position:absolute; right:0px; top:900px; }
+        /*left:왼쪽으로 부터~ (기준점) */
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+        <div class="con1"></div>
+        <div class="con2"></div>
+        <div class="con3"></div>
+        <div class="con4"></div>
+        <div class="con5"></div>
+    
+</body>
+</html>
