@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 이런방식으로도 쓰임
+        var html_data=""
+        html_data+="<h1>학생성적프로그램</h1>";
+        html_data+="<table>";
+        html_data+="<table border='1'>";//table border='1'
+        html_data+=" <tr><td>번호</td><td>이름</td><td>합계</td></tr>";
+        html_data+=" <tr><td>1</td><td>홍길동</td><td>100</td></tr>";
+        doucment.write(html_data);
+        */
+
+        document.write("<h1>학생성적프로그램</h1>");
+        document.write("<table>");
+        document.write("<table border='1'>");//table border='1'
+        document.write(" <tr><td>번호</td><td>이름</td><td>합계</td></tr>");
+        document.write(" <tr><td>1</td><td>홍길동</td><td>100</td></tr>");
+        document.write(" <tr><td>1</td><td>홍길동</td><td>100</td></tr>");
+        document.write(" <tr><td>1</td><td>홍길동</td><td>100</td></tr>");
+        document.write(" <tr><td>1</td><td>홍길동</td><td>100</td></tr>");
+        document.write(" <tr><td>1</td><td>홍길동</td><td>100</td></tr>");
+        document.write(" <tr><td>1</td><td>홍길동</td><td>100</td></tr>");
+        document.write("</table>");
+        /*이런식으로 스타일을 지정할수도 있다!
+        document.write("<table style='border-collapse:collapse;'>");
+        document.write("<tr><td style='width:150px; height:30px; border: 1px solid black;>");
+            */
+    </script>
+    <style>
+        tr.td{width:150px; height:30px; }
+        table{border-collapse: collapse; text-align:center; }
+    </style>
+    <script>
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        section{width:100%; height:1100px;}
+        .top{width:100%; height:200px; border:1px solid black; 
+            background:steelblue;}
+        .body{display: flex;}
+        .Left{width:60%; height:600px; display: flex; }
+        .Left .L1{width:33.3%; height:600px; background: tan;}
+        .Left .L2{width:33.3%; height:600px; background:brown;}
+        .Left .L3{width:33.3%; height:600px;background:yellow;}
+        .Right{width:40% ; height:600px;}
+        .Right .R1{width:100%; height:600px;background:khaki;}
+        .footer{width:100%; height:300px;background:lavender;}
+
+        @media screen and (max-width:1600px){.L1{background: blue;}}
+        @media screen and (max-width:1200px){.L1{background: green;}}
+        @media screen and (max-width:1000px){.L1{background: red;}}
+        @media screen and (max-width:800px){.L1{background: yellow;}}
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="top">
+        </div>
+        <div class="body">
+            <div class="Left">
+                <div class="L1">1</div>
+                <div class="L2">2</div>
+                <div class="L3">3</div>
+            </div>
+                
+            <div class="Right">
+                <div class="R1">1</div>
+            </div>
+
+        </div>
+        <div class="footer">
+        </div>
+
+    </section>
+</body>
+</html>
