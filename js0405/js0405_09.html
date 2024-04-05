@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>continue</title>
+    <script>
+        //1-100
+       var random_no=Math.floor( Math.random()*100)+1;
+       random_no = 10;
+       //랜덤숫자 맞추기
+       //5번까지 도전, 이후 랜덤숫자 출력
+       //for 문 사용
+        var in_no;
+        var temp = false;
+        for(var try_cnt=1; try_cnt<6 ;try_cnt++){
+            in_no= Number(prompt("숫자를 입력하세요",random_no));
+            if(in_no==random_no){
+                temp = true;
+                break;
+            }
+        }
+        // python : f'{}', javascript: `${}`
+        if(!temp){
+            document.write(`${try_cnt-1}번째 도전에 실패했습니다.<br>`);
+        }else{
+            document.write(`${try_cnt}번째 시도에 정답<br>`);
+        }
+        document.write("정답",random_no);
+              
+    
+            
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈</title>
+    <script>
+        //숫자 3개를 입력받아, 큰순서대로 출력하시오.
+        
+        var num1=Number(prompt("첫번째 숫자>>"))
+        var num2=Number(prompt("두번째 숫자>>"))
+        var num3=Number(prompt("세번째 숫자>>"))
+        var max_no= Math.max(num1,num2,num3)
+        var min_no= Math.min(num1,num2,num3)
+        var middle_no=(num1+num2+num3)-(max_no+min_no);
+
+        document.write("최대값 : ",Math.max(num1,num2,num3),"<br>");
+        document.write("최소값 : ",Math.min(num1,num2,num3),"<br>");
+        document.write("큰순서대로 : ",max_no,",",middle_no,",",min_no,"<br>");
+
+        //삼항식을 이용해서 최대값, 최소값, 큰 순서대로 해보아라.
+        var result1=(num1>num2)? ((num1>num3)?num1:num3):((num2>num3)?num2:num3)
+        document.write("삼항식 최대값: ",result1,"<br>");
+
+        var result2=(num1<num2)? ((num1<num3)?num1:num3):((num2<num3)?nu2:num3)
+        document.write("삼항식 최소값: " ,result2,"<br>");
+
+        //
+        var arr=[10,7,4];
+        document.write(arr.sort(),"<br>");//순차정렬
+        document.write(arr.reverse(),"<br>");//역순정렬
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
