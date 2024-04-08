@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜</title>
+    <style>
+    *{margin: 0; padding: 0;}
+    </style>
+    <script>
+        var today= new Date();//현재날짜
+        var nowYear=today.getFullYear();
+        var nowMonth= today.getMonth();//type이 number라서 더하기가 가능
+        var nowDate= today.getDate();
+        var nowDay= today.getDay();
+        document.write(nowYear,"년",nowMonth,"월",nowDate,"일",nowDay,"요일","<br>");
+        
+        //4월 8일 월요일입니다.
+        var f_day;
+        switch(nowDay){
+            case 0: f_day="일요일";break;
+            case 1: f_day="월요일";break;
+            case 2: f_day="화요일";break;
+            case 3: f_day="수요일";break;
+            case 4: f_day="목요일";break;
+            case 5: f_day="금요일";break;
+            case 6: f_day="토요일";break;
+         
+        }
+        document.write(nowYear,"년",nowMonth+1,"월",nowDate,"일",f_day,"<br>");
+        
+
+        /*
+        0 ~ 6 숫자로 반환.
+
+        0 : 일요일 (Sunday)
+        1 : 월요일 (Monday)
+        2 : 화요일 (Tuesday)
+        3 : 수요일 (Wednesday)
+        4 : 목요일 (Thursday)
+        5 : 금요일 (Friday)
+        6 : 토요일 (Saturday)
+        
+        2. 
+        6으로 나눈 나머지가 0인지 여부에 따라 평일/주말 구분 가능.
+
+        평일: (반환값%6 != 0)
+        주말: (반환값%6 ==0)
+        */
+ 
+
+        var today2= new Date();//현재날짜
+        var nowYear2=today.getFullYear();
+        var nowMonth2= today.getMonth();//type이 number라서 더하기가 가능
+        var nowDate2= today.getDate();
+        var nowDay2= today.getDay();
+        var d_day=new Date(2024,11,31);
+        var f_day2;
+        switch(nowDay){
+            case 0: f_day2="일요일";break;
+            case 1: f_day2="월요일";break;
+            case 2: f_day2="화요일";break;
+            case 3: f_day2="수요일";break;
+            case 4: f_day2="목요일";break;
+            case 5: f_day2="금요일";break;
+            case 6: f_day2="토요일";break;
+         
+        }
+        document.write(nowYear2,"년",nowMonth2+1,"월",nowDate2,"일",f_day2,"<br>");
+
+        //두 날짜간의 차이
+        //두 날짜간의 일 간격확인
+        var diffDate = d_day.getTime() - today.getTime();
+        document.write(d_day.getTime(),"<br>");
+        document.write(today.getTime(),"<br>");
+
+        var result= Math.ceil(diffDate(1000*60*60*24));
+        document.write("현재 남은 일자: ",result,"<br>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
