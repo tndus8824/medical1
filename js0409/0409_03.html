@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return</title>
+    <script>
+        let arr_result=[];
+        //객체임, 객체는 주소값을 가지고 있다.
+        //2개의 값을 배열로 만들어서 전역변수에 푸쉬를 해서 출력을 함.
+        function avg(num1,num2){
+            let n_total=num1+num2;
+            let n_avg=(num1+num2)/2;
+            arr_result.push(n_total);
+            arr_result.push(n_avg);
+    
+            //파이썬을 제외한 언어는 두개의 값 (더한값, 평균)을 줄수 없다.
+        }
+        //지역변수, 전역변수라 이름이 같아도 같은변수가 아니다.
+        num1=prompt("국어점수를 입력하세요.")
+        num2=prompt("영어점수를 입력하세요.")
+        result(num1,num2);
+       
+        document.write("결과값: ",arr_result,"<br>");
+
+
+
+    </script>
+</head>
+<body>
+    <button>평균구하기</button>
+</body>
+</html>
