@@ -26,12 +26,24 @@ $(function(){
 $("#body").html(htmlDate);
 
 
-$("#conformBtn").click(){}
+$("#conformBtn").click(function(){
+    $("#body").append(htmlData);
+    $("#name").val("");
+    $("#kor").val("");
+    $("#eng").val("");
+    $("#math").val("");
 
-    
-}
+});
+//전체선택, 취소
 
+$("allChk").click(function(){
+    if($(".stuChk").each(function(){
+        $(this).prop("checked",true);
+    })
 
+if($(".stuChk").each(false))
+
+d
     //정보를 가져올 것들
     //1)학생입력누르면->입력창이 떠야함
     //2)확인/취소
